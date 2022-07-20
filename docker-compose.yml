@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+
+  john-bot:
+    image: telaaks/johnbot:arm
+    restart: always
+    environment:
+      - TOKEN=
+    volumes:
+      - /videos/:/home/node/app/videos
